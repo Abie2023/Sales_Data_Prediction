@@ -163,15 +163,15 @@ def app():
         datevssales()
 
 #data imports
-quarter1 = pd.read_csv(quarter_1)
-quarter2 = pd.read_csv(quarter_2)
-quarter3 = pd.read_csv(quarter_3)
-quarter4 = pd.read_csv(quarter_4)
+quarter1 = st.cache(pd.read_csv)(quarter_1)
+quarter2 = st.cache(pd.read_csv)(quarter_2)
+quarter3 = st.cache(pd.read_csv)(quarter_3)
+quarter4 = st.cache(pd.read_csv)(quarter_4)
 
-quarter1_datasales = pd.read_csv(quarter_1_datasales)
-quarter2_datasales = pd.read_csv(quarter_2_datasales)
-quarter3_datasales = pd.read_csv(quarter_3_datasales)
-quarter4_datasales = pd.read_csv(quarter_4_datasales)
+quarter1_datasales = st.cache(pd.read_csv)(quarter_1_datasales)
+quarter2_datasales = st.cache(pd.read_csv)(quarter_2_datasales)
+quarter3_datasales = st.cache(pd.read_csv)(quarter_3_datasales)
+quarter4_datasales = st.cache(pd.read_csv)(quarter_4_datasales)
 
 
 

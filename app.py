@@ -3,7 +3,6 @@ import home
 import data_visulization
 import model
 
-
 #Pages in the app
 PAGES = {
     "Home": home,
@@ -38,6 +37,7 @@ hr.rounded {
 """, unsafe_allow_html=True,
 )
 
+                                      
 st.sidebar.title("Explore")
 
 #radio selection for the pages
@@ -55,6 +55,8 @@ multiple charts-box, line, bar, time series etc.</p>
 <p><b>Data Prediction -</b> Predict the future sales set to different features or columns. Predictions can be made using default entries
 or select one or multiple fields to be manually edited for predictions.</p>
 '''  
+st.sidebar.markdown(html4, unsafe_allow_html=True)
+
 hide_streamlit_style = """
 <style>
 #MainMenu {visibility: hidden;}

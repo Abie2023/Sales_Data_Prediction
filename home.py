@@ -64,7 +64,7 @@ def app():
     '''
     st.markdown(html2, unsafe_allow_html=True)
 
-    df = pd.read_csv(datafields)
+    df = st.cache(pd.read_csv)(datafields)
     data = [["Quarter1", "Jan, 2014 - Mar, 2014"], ["Quarter2", "Apr, 2014 - Jun, 2014"],["Quarter3", "Jul, 2014 - Sep, 2014"], 
     ["Quarter4", "Oct, 2014 - Dec, 2014"]]
     df2 = pd.DataFrame(data, columns=["Quarters", "Range"])
