@@ -15,4 +15,4 @@ quarter_4_datasales = "q4_datesales.csv"
 features = ["DayOfWeek","DayOfWeekName","MonthName","Customers","Promo","StateHoliday","SchoolHoliday","StoreType","Assortment","CompetitionDistance","CompetitionOpenSinceMonth","Promo2SinceWeek","PromoInterval"]
 salesDependingFeatures = [6,2,6,437,0,0,0,0,0,4520.0,2.0,14.0,1]
 
-model_load = "model path"
+model_load = "sales_prediction.sav"
